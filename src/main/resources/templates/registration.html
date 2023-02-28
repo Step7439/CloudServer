@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Cloud</title>
+    </head>
+    <body>
+        <h1>Registretion</h1>
+        <form method="POST" th:action="@{/registration}">
+            Email:<input type="text" name="username">
+            Password:<input type="text" name="password">
+            <input type="submit" value="Register"/>
+        </form>
+    </body>
+</html>

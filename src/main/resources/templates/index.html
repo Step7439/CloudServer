@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+</head>
+<body>
+
+<p th:text="${user}"></p>
+
+<form th:if="${user != 'anonymous'}" th:action="@{/logout}" method="post">
+    <input type="submit"value="logout">
+</form>
+
+<h2>Index</h2>
+
+<a th:href="@{/login}">Login</a><br>
+<a th:href="@{/registration}">Registrityon</a><br>
+<a th:href="@{/cloudadmin}">Admin</a><br>
+<a th:href="@{/clouduser}">User</a><br>
+</body>
+</html>
